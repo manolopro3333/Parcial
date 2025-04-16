@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ejercicio 1</title>
+    <h1>Un odontólogo sabe que de sus ingresos totales debe
+        pagar 5% de impuestos para la nación, el 2% para el
+        gremio colegio médico y un 0,3% de estampilla
+        municipal. Elaborar un algoritmo que le permita
+        mostrar cuanto es cada parcial y cuanto es el total a
+        pagar por descuentos.</h1>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+
+        function Valor1() {
+            const valor = document.getElementById('Sueldo').value;
+
+
+            document.getElementById('Nacion').innerText = Nose1 + " " + valor*0.05;
+            document.getElementById('Gremio').innerText = Nose2 + " " + valor*0.02;
+            document.getElementById('Municipal').innerText = Nose3 + " " + valor*0.003;
+            document.getElementById('Total').innerText = Nose4 + " " + (valor*0.003 + valor*0.05 + valor*0.02);
+        }
+
+        
+    </script>
+</head>
+<body>
+    <h1>Ejercicio 1</h1>
+    <label for="Sueldo">Sueldo:</label><br>
+    <input type="number" id="Sueldo" name="Sueldo" value=""><br>
+    <input type="button" value="Calcular" onclick="Valor1()"><br><br>
+    <label id="Nacion">Impuestos por nacion: </label>
+    <label id="Gremio"><br>Impuestos por gremio colegio médico: </label>
+    <label id="Municipal"><br>Impuestos por estampilla municipal: </label>
+    <label id="Total"><br>Total a pagar: </label>
+    <script>
+        var Nose1 = document.getElementById('Nacion').innerText
+        var Nose2 = document.getElementById('Gremio').innerText
+        var Nose3 = document.getElementById('Municipal').innerText
+        var Nose4 = document.getElementById('Total').innerText
+    </script>
+</body>
+</html>
