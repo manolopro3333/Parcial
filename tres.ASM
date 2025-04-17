@@ -1,5 +1,13 @@
 ; 2 horas despues de hacer esto se me olvido todo lo que investigue
 
+
+; 3. Dados dos números desarrolle el algoritmo que haga
+; lo siguiente: si los números son iguales calcular la
+; multiplicación entre ellos; si el número uno es mayor
+; al número dos que calcule la resta de lo contrario la
+; suma.
+
+
 section .bss
     Alm1 resb 8         ; Espacios de almacenamiento
     Alm2 resb 8
