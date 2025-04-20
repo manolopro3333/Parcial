@@ -1,5 +1,5 @@
 @echo off
-title Ejercicio 2
+title Naru
 
 setlocal enabledelayedexpansion
 
